@@ -41,6 +41,12 @@ Following the campaign completion, leadership has requested an assessment of cam
 
 ## Data Sources:
 
+Marketing Campaign Performance Dataset [Kaggle.com](https://www.kaggle.com/datasets/manishabhatt22/marketing-campaign-performance-dataset?resource=download)
+
+Digital Marketing Campaign Dataset [Kaggle.com](https://www.kaggle.com/datasets/zafarali27/digital-marketing-campaign)
+
+Diabetes Health Indicators Dataset [Kaggle.com](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset)
+
 ## Methodology:
 
 1. Data cleaning.
