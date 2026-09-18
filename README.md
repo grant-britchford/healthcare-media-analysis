@@ -104,3 +104,24 @@ I have created issues in the raw datasets, so that they contain:
 - Inconsistent text formatting
 
 All the issues were intentionally introduced to simulate real-world healthcare datasets.
+
+### Tools Used
+
+#### SQL Server Express
+
+- Database creation
+- data generation
+- Data validation
+
+#### Python
+
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+
+#### Power BI
+
+- Data modelling
+- DAX measures
+- Dashboard development
