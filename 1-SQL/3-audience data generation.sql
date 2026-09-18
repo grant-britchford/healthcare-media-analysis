@@ -1,0 +1,36 @@
+WITH Numbers AS(
+SELECT TOP (5000)
+ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS n
+FROM sys.objects a
+CROSS JOIN sys.objects b)
+
+INSERT INTO dbo.Audience_Data
+SELECT
+
+CONCAT('P', FORMAT(n, '00000')),
+
+CAST(
+18 + ABS(CHECKSUM(NEWID())) % 70
+AS VARCHAR),
+CASE ABS(CHECKSUM(NEWID())) % 2
+WHEN 0 THEN 'Male'
+ELSE 'Female'
+END,
+
+CASE ABS(CHECKSUM(NEWID())) % 5
+
+WHEN 0 THEN 'England'
+WHEN 1 THEN 'Scotland'
+WHEN 2 THEN 'Wales'
+ELSE 'Northern Ireland'
+END,
+
+CASE ABS(CHECKSUM(NEWID())) % 4
+
+WHEN 0 THEN 'Heart Disease'
+WHEN 1 THEN 'Diabetes'
+WHEN 2 THEN 'Cancer'
+ELSE 'Lung Disease'
+END
+
+FROM Numbers;

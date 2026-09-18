@@ -1,0 +1,39 @@
+WITH Numbers AS(
+SELECT TOP (2000)
+ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS n FROM sys.objects a
+CROSS JOIN sys.objects b)
+INSERT INTO dbo.Campaign_Performance
+SELECT
+
+1000 + n,
+
+CASE ABS(CHECKSUM(NEWID())) % 4
+
+WHEN 0 THEN 'HeartAware'
+WHEN 1 THEN 'Diabetes Plus'
+WHEN 2 THEN 'CancerCare'
+ELSE 'LungStrong'
+END,
+
+CASE ABS(CHECKSUM(NEWID())) % 6
+
+WHEN 0 THEN 'Google'
+WHEN 1 THEN 'Facebook'
+WHEN 2 THEN 'LinkedIn'
+WHEN 3 THEN 'YouTube'
+WHEN 4 THEN 'Google'
+ELSE 'YouTube'
+END,
+
+DATEADD(
+DAY,
+ABS(CHECKSUM(NEWID())) % 365,
+'01-01-2025'),
+
+50000 + ABS(CHECKSUM(NEWID())) % 200000,
+
+1000 + ABS(CHECKSUM(NEWID())) % 7000,
+
+5000 + ABS(CHECKSUM(NEWID())) % 30000
+
+FROM Numbers;
