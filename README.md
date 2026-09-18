@@ -1,57 +1,106 @@
-# Healthcare media analysis
+# Healthcare media campaign analysis
+## CMI Media Group Inspired Marketing Analytics Project
 
-## Description:
+### Description:
 
-This is an end-to-end healthcare media analysis project, which simulates the work performed by analysts at a healthcare marketing agency.
+The project simulates the work of a marketing data analyst at a healthcare-focused media agency such as CMI Media Group.
 
-The analysis includes campaign analysis, audience segmentation, ROI modeling, executive-based recommendations, and notebook-based reports.
+The objective of the project is to analyse healthcare advertising campaign performance across multiple digital channels to determine how the media
+investment's will influence the patient's engagement, prescription conversions, and the overall marketing ROI.
 
-## Business Problem:
+The project demonstrates a complete analytical workflow:
+- Data generation in SQL Server
+- Data cleaning with Python
+- Exploratory data analysis (EDA)
+- Data modeling
+- Power BI dashboard development
+- Business recommendations
 
-The pharmaceutical company has launched a multi-channel marketing campaign to increase awareness and engagement for a new diabetes treatment.
+### Business Problem:
 
-The advertising spend was distributed across several digital marketing channels, including:
-- Paid search.
-- Display.
-- Programmatic.
-- Email.
-- LinkedIn.
-- Facebook.
-- HCP Portal advertising.
+The healthcare advertisers invest millions annually into digital advertising campaigns.
 
-Following the campaign completion, leadership has requested an assessment of campaign performance and strategic recommendations for the next quarter.
+### Business Questions:
 
-## Business Questions:
+1. Which campaigns generate the highest ROI?
+2. Which channels produce the best conversion rates?
+3. Which patient demographics respond most positively?
+4. Which medical conditions generate the highest revenue?
+5. How should future marketing budgets be allocated?
 
-1. Which channels perform the best?
-2. Which audiences engage the most?
-3. Which of the channels provides the highest ROI?
-4. Where should future spending be allocated?
-5. What strategic recommendations should be made?
+### Dataset Overview:
 
-## Project Goals:
+#### Campaign Performance
 
-- Measure the marketing channel performance.
-- Analyse the audience engagement.
-- Evaluate conversion effectiveness.
-- Calculate channel-level ROI.
-- Identify optimisation opportunities.
-- Produce executive recommendations.
-- Demonstrate healthcare marketing analysis skills.
+Contains campaign-level marketing metrics.
 
-## Data Sources:
+**Columns**:
 
-Marketing Campaign Performance Dataset [Kaggle.com](https://www.kaggle.com/datasets/manishabhatt22/marketing-campaign-performance-dataset?resource=download)
+- Campaign_ID
+- Campaign_Name
+- Channel
+- Impressions
+- Clicks
+- Spend
 
-Digital Marketing Campaign Dataset [Kaggle.com](https://www.kaggle.com/datasets/zafarali27/digital-marketing-campaign)
+**Rows**:
+~ 2,294
 
-Diabetes Health Indicators Dataset [Kaggle.com](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset)
+#### Audience Data
 
-## Methodology:
+Contains the patient's demographics.
 
-1. Data cleaning.
-2. Exploratory analysis.
-3. Audience segmentation.
-4. Conversion Analysis.
-5. ROI modeling.
-6. Executive recommendations.
+**Columns**:
+
+- Patient_ID
+- Age
+- Gender
+- Location
+- Condition
+
+**Rows**:
+~ 5,000
+
+#### Conversion Data
+
+Tracks the prescription conversion events.
+
+**Columns**:
+
+- Conversion_ID
+- Campaign_ID
+- Patient_ID
+- Prescription Conversion
+- Revenue
+
+**Rows*:
+~ 10,000
+
+#### Media Spend Data
+
+Tracks the daily advertising spend.
+
+**Columns**:
+
+- Spend_ID
+- Spend_Date
+- Channel
+- Spend
+
+**Rows**:
+~ 1,339
+
+### Intentional Data Quality Issues
+
+I have created issues in the raw datasets, so that they contain:
+
+- Missing values
+- Duplicates
+- Null values
+- Misspelled campaign names
+- Misspelled channel names
+- Blank fields
+- Invalid ages
+- Inconsistent text formatting
+
+All the issues were intentionally introduced to simulate real-world healthcare datasets.
