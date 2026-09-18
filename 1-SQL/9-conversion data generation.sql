@@ -1,0 +1,36 @@
+WITH Numbers AS(
+SELECT TOP 10000
+ROW_NUMBER() OVER ( ORDER BY (SELECT NULL)) AS n
+FROM sys.objects a
+CROSS JOIN sys.objects b)
+
+INSERT INTO dbo.Conversions(
+Campaign_ID,
+Patient_ID,
+Prescription_Conversion,
+Revenue)
+
+SELECT
+
+1000 + ABS(CHECKSUM(NEWID())) % 2000,
+
+CONCAT('P', FORMAT(1 + ABS(CHECKSUM(NEWID())) % 5000, '00000')),
+
+CASE ABS(CHECKSUM(NEWID())) % 100
+
+WHEN 1 THEN 'No'
+WHEN 2 THEN 'No'
+WHEN 3 THEN 'No'
+ELSE 'Yes'
+END,
+
+CASE ABS(CHECKSUM(NEWID())) % 100
+
+WHEN 1 THEN 0
+WHEN 2 THEN 0
+WHEN 3 THEN 0
+ELSE 1000 +
+ABS(CHECKSUM(NEWID())) % 5000
+END
+
+FROM Numbers;
