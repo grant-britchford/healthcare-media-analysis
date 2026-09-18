@@ -73,7 +73,7 @@ Tracks the prescription conversion events.
 - Prescription Conversion
 - Revenue
 
-**Rows*:
+**Rows**:
 ~ 10,000
 
 #### Media Spend Data
