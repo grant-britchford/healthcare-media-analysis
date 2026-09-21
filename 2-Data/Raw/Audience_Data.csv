@@ -1,4 +1,5 @@
-﻿P00001,NULL,Female,,NULL
+﻿Patient_ID,Age,Gender,Location,Condition
+P00001,NULL,Female,,NULL
 P00002,NULL,Male,,NULL
 P00003,NULL,Female,,NULL
 P00004,NULL,Male,,NULL
