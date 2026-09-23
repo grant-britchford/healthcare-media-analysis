@@ -31,40 +31,40 @@ The healthcare advertisers invest millions annually into digital advertising cam
 ### Project Structure
 
 healthcare-media-analysis/
-|
-|- SQL/
-|   |- 1-create database.sql
-|   |- 2-audience table.sql
-|   |- 3-audience data generation.sql
-|   |- 4-audience quality issues.sql
-|   |- 5-create campaign table.sql
-|   |- 6-campaign data generation.sql
-|   |- 7-campaign quality issues.sql
-|   |- 8-create conversion table.sql
-|   |- 9-conversion data generation.sql
-|   |- 10-create media spend table.sql
-|   |- 11-media spend data generation.sql
-|   |- 12-verification counts.sql
-|   |- 13-duplicates checks.sql
-|   |- 14-export audience data.sql
-|   |- 15-export campaign performance.sql
-|   |- 16-export conversions.sql
-|   |_ 17-export media spend.sql
-|
-|¬ Data/
-|   |- Raw/
-|   |_ Processed/
-|
-|- Notebooks/
-|    |- 1-Data Clean.ipynb
-|    |- 2-EDA.ipynb
-|    |_ 3-Dashboard Data.ipynb
-|
-|- Images/
-|    |- 1-Executive Dashboard.png
-|    |- 2-Executive Dashboard with Slicers.png
-|    |- 3-Campaign Analysis.
-|    |- 4-Campaign Analysis with Slicers.png
+
+SQL/
+1-create database.sql
+2-audience table.sql
+3-audience data generation.sql
+4-audience quality issues.sql
+5-create campaign table.sql
+6-campaign data generation.sql
+7-campaign quality issues.sql
+8-create conversion table.sql
+9-conversion data generation.sql
+10-create media spend table.sql
+11-media spend data generation.sql
+12-verification counts.sql
+13-duplicates checks.sql
+14-export audience data.sql
+15-export campaign performance.sql
+16-export conversions.sql
+17-export media spend.sql
+
+Data/
+Raw/
+Processed/
+
+Notebooks/
+1-Data Clean.ipynb
+2-EDA.ipynb
+3-Dashboard Data.ipynb
+
+Images/
+1-Executive Dashboard.png
+2-Executive Dashboard with Slicers.png
+3-Campaign Analysis.
+4-Campaign Analysis with Slicers.png
 
 ### Dataset Overview:
 
