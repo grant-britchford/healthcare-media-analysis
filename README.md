@@ -5,8 +5,8 @@
 
 The project simulates the work of a marketing data analyst at a healthcare-focused media agency such as CMI Media Group.
 
-The objective of the project is to analyse healthcare advertising campaign performance across multiple digital channels to determine how the media
-investment's will influence the patient's engagement, prescription conversions, and the overall marketing ROI.
+The objective is to assess campaign effectiveness by identifying high-performing channels and audience segments, calculate the return on investment (ROI)
+, and to provide data-driven recommendations for future budget allocations.
 
 The project demonstrates a complete analytical workflow:
 - Data generation in SQL Server
@@ -27,6 +27,37 @@ The healthcare advertisers invest millions annually into digital advertising cam
 3. Which patient demographics respond most positively?
 4. Which medical conditions generate the highest revenue?
 5. How should future marketing budgets be allocated?
+
+### Project Goals:
+
+- Measure channel-level marketing performance
+- Analyse audience engagement behaviour
+- Evaluate campaign conversion effectiveness
+- Calculate ROI across marketing channels
+- Identify optimisation opportunities
+- Develop actionable business recommendations
+- Demonstrate healthcare marketing analytics capability
+
+### Tools Used
+
+#### SQL Server Express
+
+- Database creation
+- data generation
+- Data validation
+
+#### Python
+
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+
+#### Power BI
+
+- Data modelling
+- DAX measures
+- Dashboard development
 
 ### Project Structure
 
@@ -65,6 +96,19 @@ healthcare-media-analysis/
 2. Executive Dashboard with Slicers.png
 3. Campaign Analysis.
 4. Campaign Analysis with Slicers.png
+5. Audience Insights.png
+6. Audience Insights with Slicers.png
+7. Media Performance.png
+8. Media Performance with Slicers.png
+9. Recommendations.png
+10. Recommendations with Slicers
+
+**Dashboard/**
+1. Healthcare Analysis.pbix
+
+**License**
+
+**READ.md**
 
 ### Dataset Overview:
 
@@ -143,23 +187,45 @@ I have created issues in the raw datasets, so that they contain:
 
 All the issues were intentionally introduced to simulate real-world healthcare datasets.
 
-### Tools Used
+### Methodology:
 
-#### SQL Server Express
+#### Data Cleaning
+- Handle missing values
+- Remove duplicates
+- Confirm correct data types
+- Validate data quality
 
-- Database creation
-- data generation
-- Data validation
+#### Exploratory Data Analysis (EDA)
+- Analyse the channel performance
+- Explore the audience engagement patterns
+- Identify trends & outliers
 
-#### Python
+#### Audience Segmentation
+- Segment users based on their demographics
+- Evaluate the engagement by the audience groups
+- Assess the campaign efficiency
 
-- Pandas
-- Numpy
-- Matplotlib
-- Seaborn
+#### Recommendations
 
-#### Power BI
+Develop executive-level recommendations based on the analytical findings.
 
-- Data modelling
-- DAX measures
-- Dashboard development
+### Key Performance Metrics:
+
+#### Marketing
+- Impressions
+- Click-Through Rate (CTR)
+- Cost Per Click (CPC)
+- Conversion Rates
+- Cost Per Acquisition (CPA)
+
+#### Financial
+- Revenue
+- Marketing Spend
+- Return on Investment (ROI)
+- Return on Ad Spend (ROAS)
+
+#### Engagement 
+- Audience Reach
+- Engagement Rate
+- Campaign Performance
+- Channel Effectiveness
