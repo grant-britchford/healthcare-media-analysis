@@ -38,7 +38,7 @@ The healthcare advertisers invest millions annually into digital advertising cam
 - Develop actionable business recommendations
 - Demonstrate healthcare marketing analytics capability
 
-### Tools Used
+### Tools Used:
 
 #### SQL Server Express
 
@@ -59,7 +59,7 @@ The healthcare advertisers invest millions annually into digital advertising cam
 - DAX measures
 - Dashboard development
 
-### Project Structure
+### Project Structure:
 
 healthcare-media-analysis/
 
@@ -229,3 +229,28 @@ Develop executive-level recommendations based on the analytical findings.
 - Engagement Rate
 - Campaign Performance
 - Channel Effectiveness
+
+### Key Findings:
+
+1. LungStrong generated the highest revenue & conversion rate.
+2. HeartAware had the best Return on Ad Spend (ROAS).
+3. CancerCare had the highest Return on Investment (ROI) percentage.
+4. YouTube was the best marketing channel.
+
+### Business Recommendations:
+
+1. Increase the investment in the top-performing campaigns.
+2. Increase the lower rates of conversion by 20%.
+3. Re-aim the 18 - 25 year old campaigns to increase the number of patients in that age range.
+
+### Author:
+
+Grant Britchford
+Data Analyst
+
+**Date**: 24th Sept 2026
+
+### License:
+
+The project is licensed under the MIT license.
+**See licence for more details**.
